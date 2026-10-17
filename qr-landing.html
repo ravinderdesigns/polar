@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Polar Coatings — Quick QR Customer Journey</title>
+  <meta name="description" content="Scan and discover contractor-quality paints, roof sealers, damp-proof coatings, and rust treatments built on 130 years of British heritage.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://polarcoatings.co.uk/cdn/shop/files/icon-01.jpg?crop=center&height=32&v=1651226958&width=32">
+
+  <!-- Google Fonts: Manrope & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- QR Journey Dedicated Stylesheet -->
+  <link rel="stylesheet" href="assets/css/qr-journey.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="qr-body">
+  <div class="qr-page-shell">
+    
+    <!-- Top Client Presentation Mode Bar -->
+    <aside class="qr-presentation-bar" aria-label="Demo Bar">
+      <span>
+        <i data-lucide="qr-code" style="width: 14px; height: 14px;"></i>
+        <span>Polar Packaging QR Entry</span>
+      </span>
+      <button class="qr-demo-trigger-pill" title="Open live QR code for phone testing">
+        <i data-lucide="smartphone" style="width: 12px; height: 12px;"></i>
+        <span>Scan on Phone</span>
+      </button>
+    </aside>
+
+    <!-- Compact Mobile Header -->
+    <header class="qr-header">
+      <div class="qr-header-left">
+        <a href="qr-landing.html" aria-label="Polar Coatings QR Homepage">
+          <img src="assets/images/polar-logo.png" alt="Polar Specialist Coatings" class="qr-brand-logo-img">
+        </a>
+      </div>
+
+      <nav class="qr-header-actions" aria-label="Quick Actions">
+        <a href="qr-category.html" class="qr-icon-btn" aria-label="Browse All Coatings" title="Browse Products">
+          <i data-lucide="grid" style="width: 19px; height: 19px;"></i>
+        </a>
+        <a href="qr-checkout.html" class="qr-icon-btn" aria-label="View Shopping Basket" title="Shopping Basket">
+          <i data-lucide="shopping-bag" style="width: 19px; height: 19px;"></i>
+          <span class="qr-cart-count" style="display: none;">0</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <!-- Hero Section: Find the Right Coating for Your Project -->
+      <section class="qr-hero-card" aria-labelledby="heroTitle">
+        <span class="qr-hero-tag">
+          <i data-lucide="shield-check" style="width: 12px; height: 12px;"></i>
+          <span>130 Years British Heritage</span>
+        </span>
+
+        <h1 class="qr-hero-headline" id="heroTitle">
+          Find the Right Coating for Your Project
+        </h1>
+
+        <p class="qr-hero-supporting">
+          Discover paints, waterproofing solutions, sealers and specialist coatings for your next project.
+        </p>
+
+        <!-- Product Pack Visual Preview -->
+        <div class="qr-hero-visual-row">
+          <img src="assets/images/dampseal.png" alt="Polar DampSeal Paint Tin" class="qr-hero-thumb">
+          <div class="qr-hero-pack-info">
+            <h4>Trade-Grade Formulations</h4>
+            <p>Engineered for instant DIY & contractor success</p>
+          </div>
+          <i data-lucide="chevron-right" style="width: 16px; height: 16px; color: var(--light-mint);"></i>
+        </div>
+
+        <div class="qr-hero-ctas">
+          <a href="qr-category.html" class="btn btn-primary">
+            <span>Explore Products</span>
+            <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          </a>
+          <a href="#featuredProducts" class="btn btn-secondary">
+            <span>Shop Best Sellers</span>
+            <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Quick Category Navigation (Horizontal scroll on mobile) -->
+      <section class="qr-section" aria-labelledby="catHeading">
+        <div class="qr-section-header">
+          <div>
+            <h2 class="qr-section-title" id="catHeading">Shop by Category</h2>
+            <p class="qr-section-sub">Select your project type</p>
+          </div>
+          <a href="qr-category.html" class="qr-view-all">
+            <span>View All</span>
+            <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+          </a>
+        </div>
+
+        <div class="qr-categories-scroll" id="categoriesScroll">
+          <!-- Category 1: Repair & Protection -->
+          <a href="qr-category.html?cat=repair" class="qr-category-card">
+            <div class="qr-category-thumb-wrap">
+              <img src="assets/images/cat-repair.jpg" alt="Repair and Protection" class="qr-category-thumb" loading="lazy">
+            </div>
+            <h3 class="qr-category-name">Repair &amp; Protection</h3>
+            <span class="qr-category-meta">
+              <span>LeakFix &amp; Metal</span>
+              <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+            </span>
+          </a>
+
+          <!-- Category 2: Paints & Coatings -->
+          <a href="qr-category.html?cat=paints" class="qr-category-card">
+            <div class="qr-category-thumb-wrap">
+              <img src="assets/images/cat-paints.jpg" alt="Paints and Coatings" class="qr-category-thumb" loading="lazy">
+            </div>
+            <h3 class="qr-category-name">Paints &amp; Coatings</h3>
+            <span class="qr-category-meta">
+              <span>Damp, Floor &amp; Bath</span>
+              <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+            </span>
+          </a>
+
+          <!-- Category 3: Spray Paints -->
+          <a href="qr-category.html?cat=sprays" class="qr-category-card">
+            <div class="qr-category-thumb-wrap">
+              <img src="assets/images/cat-sprays.jpg" alt="Spray Paints" class="qr-category-thumb" loading="lazy">
+            </div>
+            <h3 class="qr-category-name">Spray Paints</h3>
+            <span class="qr-category-meta">
+              <span>Aerosols &amp; Rust</span>
+              <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+            </span>
+          </a>
+
+          <!-- Category 4: Sealers & Cleaners -->
+          <a href="qr-category.html?cat=sealers" class="qr-category-card">
+            <div class="qr-category-thumb-wrap">
+              <img src="assets/images/cat-sealers.jpg" alt="Sealers and Cleaners" class="qr-category-thumb" loading="lazy">
+            </div>
+            <h3 class="qr-category-name">Sealers &amp; Cleaners</h3>
+            <span class="qr-category-meta">
+              <span>Patio &amp; Strippers</span>
+              <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Featured / Best-Selling Products Section (4-6 realistic product cards) -->
+      <section class="qr-section" id="featuredProducts" aria-labelledby="featuredHeading">
+        <div class="qr-section-header">
+          <div>
+            <h2 class="qr-section-title" id="featuredHeading">Best-Selling Coatings</h2>
+            <p class="qr-section-sub">Proven formulations trusted across the UK</p>
+          </div>
+          <a href="qr-category.html" class="qr-view-all">
+            <span>See 8 Products</span>
+            <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+          </a>
+        </div>
+
+        <div class="qr-product-grid" id="landingProductGrid">
+          <!-- Dynamic rendering via qr-data.js for instant maintainability -->
+        </div>
+      </section>
+
+      <!-- Compact Application Demonstration Video -->
+      <section class="qr-section" aria-labelledby="videoDemoHeading">
+        <div class="qr-usage-card" style="margin-bottom: 0;">
+          <h3 id="videoDemoHeading" style="font-size: 0.9375rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+            <i data-lucide="video" style="width: 18px; height: 18px; color: var(--secondary-teal);"></i>
+            <span>How to Apply Like a Professional</span>
+          </h3>
+          <p style="margin-bottom: 0.75rem; font-size: 0.8125rem; color: var(--muted-text);">
+            Watch a quick 60-second video on surface preparation and smooth coverage.
+          </p>
+          <div style="position: relative; border-radius: var(--radius-sm); overflow: hidden; aspect-ratio: 16 / 9; background: #000;">
+            <video controls preload="metadata" poster="assets/images/video-thumb-1.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="https://polarcoatings.co.uk/cdn/shop/videos/c/vp/e22b38a487e643d1873e100f1f42dec3/e22b38a487e643d1873e100f1f42dec3.HD-1080p-4.8Mbps-65033831.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reassurance Strip -->
+      <section class="qr-reassurance-strip" aria-label="Customer Reassurance">
+        <div class="qr-reassurance-item">
+          <i data-lucide="truck"></i>
+          <strong>Free Delivery</strong>
+          <span>Orders over £50</span>
+        </div>
+        <div class="qr-reassurance-item">
+          <i data-lucide="clock"></i>
+          <strong>Fast Dispatch</strong>
+          <span>Same day before 2pm</span>
+        </div>
+        <div class="qr-reassurance-item">
+          <i data-lucide="shield"></i>
+          <strong>British Heritage</strong>
+          <span>Since Johnstone's 1890</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Compact Support Footer -->
+    <footer class="qr-compact-footer">
+      <div class="qr-footer-verified-badge">
+        <i data-lucide="check" style="width: 12px; height: 12px;"></i>
+        <span>Verified Polar Coatings QR Experience</span>
+      </div>
+      <div class="qr-footer-links">
+        <a href="qr-landing.html" class="qr-footer-link">Home</a>
+        <span>•</span>
+        <a href="qr-category.html" class="qr-footer-link">Products</a>
+        <span>•</span>
+        <a href="qr-checkout.html" class="qr-footer-link">Basket</a>
+        <span>•</span>
+        <a href="https://polarcoatings.co.uk" target="_blank" rel="noopener" class="qr-footer-link">Live Store</a>
+      </div>
+      <p>&copy; 2026 Polar Specialist Coatings • Technical Support: 0161 850 0379</p>
+    </footer>
+
+  </div>
+
+  <!-- Shared QR Catalog & Journey Scripts -->
+  <script src="assets/js/qr-data.js"></script>
+  <script src="assets/js/qr-journey.js"></script>
+  <script>
+    // Render 6 Featured Products on the landing page
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('landingProductGrid');
+      if (!container) return;
+
+      const featured = POLAR_PRODUCTS.slice(0, 6);
+      container.innerHTML = featured.map(p => `
+        <a href="qr-product.html?id=${p.id}" class="qr-product-card" aria-label="${p.title}">
+          <span class="qr-card-badge ${p.badge.includes('Water') ? 'badge-waterbased' : ''}">${p.badge}</span>
+          <div class="qr-product-img-wrap">
+            <img src="${p.image}" alt="${p.shortTitle}" class="qr-product-img" loading="lazy">
+          </div>
+          <h3 class="qr-product-title">${p.shortTitle}</h3>
+          <p class="qr-product-benefit">${p.shortBenefit}</p>
+          <div class="qr-product-footer">
+            <div class="qr-product-price">
+              <span>From</span> £${p.price.toFixed(2)}
+            </div>
+            <span class="qr-btn-view" title="View details">
+              <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+            </span>
+          </div>
+        </a>
+      `).join('');
+
+      if (window.lucide) lucide.createIcons();
+    });
+  </script>
+</body>
+</html>

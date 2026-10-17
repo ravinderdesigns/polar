@@ -71,6 +71,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -411,7 +412,7 @@ h6 {
   align-items: center;
   gap: 0.35rem;
   font-family: var(--font-heading);
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 600;
   color: var(--dark-text);
   padding: 0.75rem 0;
@@ -3116,6 +3117,13 @@ h6 {
 }
 
 /* 7. Modern Testimonials (3 Cards with Avatar) */
+.testimonials-modern-grid,
+.blog-modern-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
 .testimonial-modern-card {
   background: var(--white);
   border-radius: var(--radius-lg);

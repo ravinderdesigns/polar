@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Polar Coatings — Choose Coating Category</title>
+  <meta name="description" content="Browse contractor-calibre paints, roof repair sealants, floor coatings, and spray solutions.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://polarcoatings.co.uk/cdn/shop/files/icon-01.jpg?crop=center&height=32&v=1651226958&width=32">
+
+  <!-- Google Fonts: Manrope & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- QR Journey Stylesheet -->
+  <link rel="stylesheet" href="assets/css/qr-journey.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="qr-body">
+  <div class="qr-page-shell">
+
+    <!-- Compact Mobile Header with Back Navigation -->
+    <header class="qr-header">
+      <div class="qr-header-left">
+        <a href="qr-landing.html" class="qr-back-btn" aria-label="Back to QR Landing" title="Back">
+          <i data-lucide="chevron-left" style="width: 22px; height: 22px;"></i>
+        </a>
+        <a href="qr-landing.html" aria-label="Polar Coatings QR Homepage">
+          <img src="assets/images/polar-logo.png" alt="Polar Specialist Coatings" class="qr-brand-logo-img">
+        </a>
+      </div>
+
+      <nav class="qr-header-actions" aria-label="Quick Actions">
+        <a href="qr-checkout.html" class="qr-icon-btn" aria-label="View Shopping Basket" title="Shopping Basket">
+          <i data-lucide="shopping-bag" style="width: 19px; height: 19px;"></i>
+          <span class="qr-cart-count" style="display: none;">0</span>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Category Filter Chips (Sticky Horizontal Bar) -->
+    <nav class="qr-chips-bar" id="categoryChipsBar" aria-label="Category Selection Chips">
+      <button class="qr-filter-chip active" data-category="all">
+        <i data-lucide="layers" style="width: 14px; height: 14px;"></i>
+        <span>All</span>
+      </button>
+      <button class="qr-filter-chip" data-category="repair">
+        <i data-lucide="shield-alert" style="width: 14px; height: 14px;"></i>
+        <span>Repair</span>
+      </button>
+      <button class="qr-filter-chip" data-category="paints">
+        <i data-lucide="paint-bucket" style="width: 14px; height: 14px;"></i>
+        <span>Paints</span>
+      </button>
+      <button class="qr-filter-chip" data-category="sprays">
+        <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+        <span>Sprays</span>
+      </button>
+      <button class="qr-filter-chip" data-category="sealers">
+        <i data-lucide="droplets" style="width: 14px; height: 14px;"></i>
+        <span>Sealers</span>
+      </button>
+    </nav>
+
+    <main id="mainContent">
+      <!-- Category Banner / Title -->
+      <section class="qr-section" style="padding-bottom: 0.5rem;">
+        <div style="background: var(--mint-surface); border-radius: var(--radius-md); padding: 1rem 1.25rem; border: 1px solid var(--border-light);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem;">
+            <span class="qr-micro-badge" id="categoryBadge">All Products</span>
+            <span style="font-size: 0.72rem; color: var(--muted-text);" id="productCountLabel">8 products</span>
+          </div>
+          <h1 class="qr-section-title" id="categoryTitle" style="font-size: 1.35rem; margin-bottom: 0.25rem;">
+            All Specialist Coatings
+          </h1>
+          <p class="qr-section-sub" id="categoryTagline">
+            Discover trade-proven paints, waterproofing solutions, and sealers.
+          </p>
+        </div>
+      </section>
+
+      <!-- Responsive Product Grid (2 columns on mobile) -->
+      <section class="qr-section" aria-labelledby="categoryTitle">
+        <div class="qr-product-grid" id="categoryProductGrid">
+          <!-- Dynamically populated via qr-data.js -->
+        </div>
+
+        <!-- Empty state placeholder (if filter matches nothing) -->
+        <div id="emptyState" style="display: none; text-align: center; padding: 3rem 1rem;">
+          <i data-lucide="search" style="width: 36px; height: 36px; color: var(--muted-text); margin-bottom: 0.75rem;"></i>
+          <h3 style="font-size: 1rem; color: var(--primary-dark); margin-bottom: 0.25rem;">No products found</h3>
+          <p style="font-size: 0.8125rem; color: var(--muted-text); margin-bottom: 1rem;">Try selecting another category chip above.</p>
+          <button class="btn btn-sm btn-primary" onclick="setCategoryFilter('all')">View All Products</button>
+        </div>
+      </section>
+
+      <!-- Reassurance Strip -->
+      <section class="qr-reassurance-strip" aria-label="Customer Reassurance">
+        <div class="qr-reassurance-item">
+          <i data-lucide="truck"></i>
+          <strong>Free Delivery</strong>
+          <span>Orders over £50</span>
+        </div>
+        <div class="qr-reassurance-item">
+          <i data-lucide="clock"></i>
+          <strong>Fast Dispatch</strong>
+          <span>Same day before 2pm</span>
+        </div>
+        <div class="qr-reassurance-item">
+          <i data-lucide="shield"></i>
+          <strong>British Heritage</strong>
+          <span>Since Johnstone's 1890</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Compact Support Footer -->
+    <footer class="qr-compact-footer">
+      <div class="qr-footer-verified-badge">
+        <i data-lucide="check" style="width: 12px; height: 12px;"></i>
+        <span>Verified Polar Coatings QR Experience</span>
+      </div>
+      <div class="qr-footer-links">
+        <a href="qr-landing.html" class="qr-footer-link">Home</a>
+        <span>•</span>
+        <a href="qr-category.html" class="qr-footer-link">Products</a>
+        <span>•</span>
+        <a href="qr-checkout.html" class="qr-footer-link">Basket</a>
+        <span>•</span>
+        <a href="https://polarcoatings.co.uk" target="_blank" rel="noopener" class="qr-footer-link">Live Store</a>
+      </div>
+      <p>&copy; 2026 Polar Specialist Coatings • Technical Support: 0161 850 0379</p>
+    </footer>
+
+  </div>
+
+  <!-- Shared Scripts -->
+  <script src="assets/js/qr-data.js"></script>
+  <script src="assets/js/qr-journey.js"></script>
+  <script>
+    let activeCategory = 'all';
+
+    function renderProducts(category) {
+      activeCategory = category;
+      const grid = document.getElementById('categoryProductGrid');
+      const empty = document.getElementById('emptyState');
+      const titleEl = document.getElementById('categoryTitle');
+      const taglineEl = document.getElementById('categoryTagline');
+      const badgeEl = document.getElementById('categoryBadge');
+      const countEl = document.getElementById('productCountLabel');
+
+      const catInfo = getCategoryById(category);
+      titleEl.textContent = catInfo.name;
+      taglineEl.textContent = catInfo.tagline;
+      badgeEl.textContent = catInfo.shortName;
+
+      // Update active chip state
+      document.querySelectorAll('.qr-filter-chip').forEach(chip => {
+        if (chip.getAttribute('data-category') === category) {
+          chip.classList.add('active');
+        } else {
+          chip.classList.remove('active');
+        }
+      });
+
+      const products = getProductsByCategory(category);
+      countEl.textContent = `${products.length} product${products.length === 1 ? '' : 's'}`;
+
+      if (products.length === 0) {
+        grid.style.display = 'none';
+        empty.style.display = 'block';
+      } else {
+        grid.style.display = 'grid';
+        empty.style.display = 'none';
+
+        grid.innerHTML = products.map(p => `
+          <a href="qr-product.html?id=${p.id}" class="qr-product-card" aria-label="${p.title}">
+            <span class="qr-card-badge ${p.badge.includes('Water') ? 'badge-waterbased' : ''}">${p.badge}</span>
+            <div class="qr-product-img-wrap">
+              <img src="${p.image}" alt="${p.shortTitle}" class="qr-product-img" loading="lazy">
+            </div>
+            <h3 class="qr-product-title">${p.shortTitle}</h3>
+            <p class="qr-product-benefit">${p.shortBenefit}</p>
+            <div class="qr-product-footer">
+              <div class="qr-product-price">
+                <span>From</span> £${p.price.toFixed(2)}
+              </div>
+              <span class="qr-btn-view" title="View details">
+                <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+              </span>
+            </div>
+          </a>
+        `).join('');
+      }
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function setCategoryFilter(cat) {
+      renderProducts(cat);
+      // Update browser URL without reload for clean shareable links
+      const url = new URL(window.location);
+      if (cat === 'all') {
+        url.searchParams.delete('cat');
+      } else {
+        url.searchParams.set('cat', cat);
+      }
+      window.history.replaceState({}, '', url);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Check query param e.g. qr-category.html?cat=repair
+      const catParam = getURLParam('cat') || 'all';
+      renderProducts(catParam);
+
+      // Attach click listeners to chips
+      document.querySelectorAll('.qr-filter-chip').forEach(chip => {
+        chip.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetCat = chip.getAttribute('data-category');
+          setCategoryFilter(targetCat);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

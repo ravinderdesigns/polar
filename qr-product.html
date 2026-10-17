@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Polar Coatings — Product Details</title>
+  <meta name="description" content="View specifications, coverage, drying time, and application instructions for Polar Specialist Coatings.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://polarcoatings.co.uk/cdn/shop/files/icon-01.jpg?crop=center&height=32&v=1651226958&width=32">
+
+  <!-- Google Fonts: Manrope & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- QR Journey Stylesheet -->
+  <link rel="stylesheet" href="assets/css/qr-journey.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="qr-body">
+  <div class="qr-page-shell">
+
+    <!-- Compact Mobile Header with Back Button -->
+    <header class="qr-header">
+      <div class="qr-header-left">
+        <a href="qr-category.html" id="backNavBtn" class="qr-back-btn" aria-label="Back to Category Products" title="Back">
+          <i data-lucide="chevron-left" style="width: 22px; height: 22px;"></i>
+        </a>
+        <a href="qr-landing.html" aria-label="Polar Coatings QR Homepage">
+          <img src="assets/images/polar-logo.png" alt="Polar Specialist Coatings" class="qr-brand-logo-img">
+        </a>
+      </div>
+
+      <nav class="qr-header-actions" aria-label="Quick Actions">
+        <a href="qr-category.html" class="qr-icon-btn" aria-label="Browse All Coatings" title="Browse Products">
+          <i data-lucide="grid" style="width: 19px; height: 19px;"></i>
+        </a>
+        <a href="qr-checkout.html" class="qr-icon-btn" aria-label="View Shopping Basket" title="Shopping Basket">
+          <i data-lucide="shopping-bag" style="width: 19px; height: 19px;"></i>
+          <span class="qr-cart-count" style="display: none;">0</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <!-- Product Stage Image -->
+      <section class="qr-product-hero-stage" aria-label="Product Image">
+        <span class="qr-card-badge" id="pdpBadge">Best Seller</span>
+        <img src="assets/images/dampseal.png" alt="Polar Product Image" class="qr-product-stage-img" id="pdpImage">
+      </section>
+
+      <!-- Product Details & Specifications Body -->
+      <div class="qr-product-details-body">
+        
+        <!-- Title & Live Price -->
+        <div class="qr-product-headline-row">
+          <h1 class="qr-pdp-title" id="pdpTitle">
+            Polar LeakFix Fibred Roof Coating
+          </h1>
+        </div>
+
+        <div class="qr-pdp-rating-strip">
+          <span class="qr-pdp-stars">★★★★★</span>
+          <span id="pdpRatingText">4.8 (240 verified reviews)</span>
+          <span>•</span>
+          <span style="color: var(--secondary-teal); font-weight: 700;">In Stock</span>
+        </div>
+
+        <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 1rem;">
+          <div class="qr-pdp-price" id="pdpPriceDisplay">£23.99</div>
+          <span style="font-size: 0.75rem; color: var(--muted-text);">inc. VAT</span>
+        </div>
+
+        <p class="qr-pdp-lead" id="pdpShortBenefit">
+          Instant emergency waterproofing membrane reinforced with synthetic fibres for flat roofs, felt & gutters.
+        </p>
+
+        <!-- Variant / Size Selector -->
+        <div class="qr-variant-block" id="variantSelectorBlock">
+          <div class="qr-block-label">
+            <span>Select Size / Pack:</span>
+            <span id="selectedVariantLabel" style="color: var(--secondary-teal);">1 Litre</span>
+          </div>
+          <div class="qr-variant-chips" id="variantChipsContainer">
+            <!-- Dynamic variant buttons -->
+          </div>
+        </div>
+
+        <!-- 3 Short Key Benefits -->
+        <div class="qr-benefits-list">
+          <div class="qr-block-label" style="color: var(--secondary-teal); margin-bottom: 0.65rem;">
+            <span>Key Advantages</span>
+          </div>
+          <div id="pdpBenefitsContainer">
+            <!-- Dynamic 3 key benefits -->
+          </div>
+        </div>
+
+        <!-- Specifications (Coverage & Drying Time) -->
+        <div class="qr-specs-grid">
+          <div class="qr-spec-box">
+            <span>Coverage</span>
+            <strong id="pdpCoverage">1 - 2 m² / Litre</strong>
+          </div>
+          <div class="qr-spec-box">
+            <span>Drying Time</span>
+            <strong id="pdpDryingTime">Touch dry in 24h</strong>
+          </div>
+        </div>
+
+        <!-- Surface Suitability Tags -->
+        <div style="margin-bottom: 0.5rem;">
+          <div class="qr-block-label"><span>Recommended Surfaces</span></div>
+          <div class="qr-surfaces-tags" id="pdpSurfacesContainer">
+            <!-- Dynamic tags -->
+          </div>
+        </div>
+
+        <!-- Application & Usage Instructions -->
+        <div class="qr-usage-card">
+          <h4>
+            <i data-lucide="book-open" style="width: 16px; height: 16px; color: var(--secondary-teal);"></i>
+            <span>Application Instructions</span>
+          </h4>
+          <p id="pdpUsageInstructions">
+            Ensure surface is clean and free of loose debris. Apply directly with a brush in a thick uniform coat.
+          </p>
+        </div>
+
+        <!-- Verified Live Product URL fallback -->
+        <a href="https://polarcoatings.co.uk" target="_blank" rel="noopener" class="qr-verified-live-btn" id="pdpLiveStoreLink">
+          <div>
+            <div>Buy on Official Polar Website</div>
+            <span style="font-size: 0.72rem; color: var(--muted-text); font-weight: normal;">View complete technical datasheets</span>
+          </div>
+          <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+        </a>
+
+      </div>
+    </main>
+
+    <!-- Sticky Bottom Mobile Action Bar (Add to Cart / Buy Now) -->
+    <aside class="qr-sticky-action-bar" aria-label="Purchase Action Bar">
+      <div class="qr-action-bar-inner">
+        <!-- Quantity Selector -->
+        <div class="qr-qty-control" aria-label="Quantity Control">
+          <button class="qr-qty-btn" id="qtyMinusBtn" aria-label="Decrease quantity">&minus;</button>
+          <span class="qr-qty-num" id="qtyDisplay">1</span>
+          <button class="qr-qty-btn" id="qtyPlusBtn" aria-label="Increase quantity">+</button>
+        </div>
+
+        <!-- Add to Basket Button -->
+        <button class="btn btn-primary qr-action-btn-main" id="addToBasketBtn">
+          <i data-lucide="shopping-bag" style="width: 18px; height: 18px;"></i>
+          <span id="addToBasketBtnText">Add to Basket • £23.99</span>
+        </button>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Shared Scripts -->
+  <script src="assets/js/qr-data.js"></script>
+  <script src="assets/js/qr-journey.js"></script>
+  <script>
+    let currentProduct = null;
+    let selectedVariant = null;
+    let currentQuantity = 1;
+
+    function initProductPage() {
+      const prodId = getURLParam('id') || 'leakfix';
+      currentProduct = getProductById(prodId);
+      selectedVariant = currentProduct.variants[0];
+
+      // Update back button destination to reflect product's category
+      const backNav = document.getElementById('backNavBtn');
+      if (backNav) {
+        backNav.href = `qr-category.html?cat=${currentProduct.category}`;
+      }
+
+      // Populate elements
+      document.title = `${currentProduct.shortTitle} — Polar Coatings`;
+      document.getElementById('pdpTitle').textContent = currentProduct.title;
+      document.getElementById('pdpImage').src = currentProduct.image;
+      document.getElementById('pdpImage').alt = currentProduct.title;
+      document.getElementById('pdpBadge').textContent = currentProduct.badge;
+      document.getElementById('pdpShortBenefit').textContent = currentProduct.shortBenefit;
+      document.getElementById('pdpRatingText').textContent = `${currentProduct.rating} (${currentProduct.reviewsCount} reviews)`;
+      document.getElementById('pdpCoverage').textContent = currentProduct.coverage;
+      document.getElementById('pdpDryingTime').textContent = currentProduct.dryingTime;
+      document.getElementById('pdpUsageInstructions').textContent = currentProduct.usage;
+
+      // Live link
+      const liveLink = document.getElementById('pdpLiveStoreLink');
+      if (liveLink) {
+        liveLink.href = currentProduct.liveUrl;
+      }
+
+      // 3 Benefits
+      const benefitsContainer = document.getElementById('pdpBenefitsContainer');
+      benefitsContainer.innerHTML = currentProduct.benefits.map(b => `
+        <div class="qr-benefit-row">
+          <span class="qr-benefit-check">✓</span>
+          <span>${b}</span>
+        </div>
+      `).join('');
+
+      // Surface Tags
+      const surfacesContainer = document.getElementById('pdpSurfacesContainer');
+      surfacesContainer.innerHTML = currentProduct.surfaces.map(s => `
+        <span class="qr-surface-tag">
+          <i data-lucide="check" style="width: 12px; height: 12px; color: var(--secondary-teal);"></i>
+          <span>${s}</span>
+        </span>
+      `).join('');
+
+      // Variant Buttons
+      const variantContainer = document.getElementById('variantChipsContainer');
+      variantContainer.innerHTML = currentProduct.variants.map((v, idx) => `
+        <button class="qr-variant-btn ${idx === 0 ? 'active' : ''}" data-variant-id="${v.id}" data-price="${v.price}">
+          ${v.name || v.size} • £${parseFloat(v.price).toFixed(2)}
+        </button>
+      `).join('');
+
+      // Attach variant clicks
+      variantContainer.querySelectorAll('.qr-variant-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          variantContainer.querySelectorAll('.qr-variant-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const vid = btn.getAttribute('data-variant-id');
+          selectedVariant = currentProduct.variants.find(v => v.id === vid) || currentProduct.variants[0];
+          updatePriceAndCTA();
+        });
+      });
+
+      updatePriceAndCTA();
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function updatePriceAndCTA() {
+      const price = parseFloat(selectedVariant.price);
+      const totalItemPrice = (price * currentQuantity).toFixed(2);
+      
+      document.getElementById('pdpPriceDisplay').textContent = `£${price.toFixed(2)}`;
+      document.getElementById('selectedVariantLabel').textContent = selectedVariant.name || selectedVariant.size;
+      document.getElementById('addToBasketBtnText').textContent = `Add to Basket • £${totalItemPrice}`;
+      document.getElementById('qtyDisplay').textContent = currentQuantity;
+    }
+
+    // Attach listeners on load
+    document.addEventListener('DOMContentLoaded', () => {
+      initProductPage();
+
+      // Quantity controls
+      document.getElementById('qtyMinusBtn').addEventListener('click', () => {
+        if (currentQuantity > 1) {
+          currentQuantity--;
+          updatePriceAndCTA();
+        }
+      });
+
+      document.getElementById('qtyPlusBtn').addEventListener('click', () => {
+        if (currentQuantity < 20) {
+          currentQuantity++;
+          updatePriceAndCTA();
+        }
+      });
+
+      // Add to Basket CTA
+      document.getElementById('addToBasketBtn').addEventListener('click', () => {
+        if (!currentProduct || !selectedVariant) return;
+        PolarQRCart.addItem(currentProduct.id, selectedVariant.id, currentQuantity);
+      });
+    });
+  </script>
+</body>
+</html>
